@@ -1,9 +1,3 @@
-<style type="text/css">
-	.notes{
-		color: red
-	}
-</style>
-
 <h1><center>Laravel Url Shortner</center></h1>
 <p>
 	Laravel Url Shorter is a simple helper code that allows developers to transform an Url to a random alpha numeric mask. Orignal URL is captured and recorded into database url_shortner table.

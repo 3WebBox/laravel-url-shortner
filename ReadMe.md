@@ -6,9 +6,9 @@
 	<h4>Following points guide you towards usig the code in your application :-</h4>
 	<ul>
 		<li>Add this line in composer.json file 
-			<code>"files":[
+			<pre>"files":[
             "app/Helpers/UrlShortener.php"
-        	]</code>
+        	]</pre>
     	</li>
 	</ul>
 </p>

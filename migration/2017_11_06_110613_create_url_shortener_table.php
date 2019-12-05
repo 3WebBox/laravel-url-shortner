@@ -14,10 +14,10 @@ class CreateUrlShortenerTable extends Migration
     public function up()
     {
         Schema::create('url_shortener', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('uuid')->unique();
+            $table->uuid('uuid')->primary();
             $table->string('original_url');
             $table->string('masked_url')->unique();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

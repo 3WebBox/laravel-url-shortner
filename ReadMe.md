@@ -28,12 +28,8 @@
 		<li>In api.php file paste following lines
 			<p>
 				Route::prefix('s')->group(function() {
-					Route::get('{maksed_url}', 'Controller@generateRealUrl')->middleware('signed');
+					Route::get('{maksed_url}', 'Controller@generateRealUrl');
 				});	
-			</p>
-			<p>
-				Note: In Http's Kernel.php file $routeMiddleware array add following line if not present
-				'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
 			</p>
 		</li>
 	</ul>
